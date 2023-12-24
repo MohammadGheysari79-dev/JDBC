@@ -1,2 +1,3 @@
 # JDBC
-It's a java project about JDBC and working with database.
+It's a Java project about JDBC and working with databases.
+This project models a company dashboard for employees.

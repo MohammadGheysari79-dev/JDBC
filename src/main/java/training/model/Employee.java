@@ -2,17 +2,15 @@ package training.model;
 
 public class Employee {
     private final int ID;
+    private int password;
     private String firstName;
     private String lastName;
-    private int age;
-    private double salary;
 
-    public Employee(int ID, String firstName, String lastName, int age, double salary) {
+    public Employee(int ID, String firstName, String lastName, int password) {
         this.ID = ID;
+        this.password = password;
         this.firstName = firstName;
         this.lastName = lastName;
-        this.age = age;
-        this.salary = salary;
     }
 
     public int getID() {
@@ -27,11 +25,11 @@ public class Employee {
         return lastName;
     }
 
-    public int getAge() {
-        return age;
+    public int getPassword() {
+        return password;
     }
 
-    public double getSalary() {
-        return salary;
+    public void setPassword(int password) {
+        this.password = password;
     }
 }

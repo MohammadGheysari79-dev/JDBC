@@ -12,11 +12,26 @@ public class Main {
     public static void main(String[] args) {
         System.out.println("Welcome");
         mainMenu();
-        login();
+        System.out.println("Have a good day.");
     }
 
     private static void mainMenu() {
-
+        do {
+            System.out.println("1.Login as Employee");
+            System.out.println("2.Login as administrator");
+            System.out.println("0.Exit");
+            int option = readInt("Enter option number:", "WrongInput!", true);
+            switch (option) {
+                case 0:
+                    return;
+                case 1:
+                    login();
+                    break;
+                case 2:
+                    System.out.println("This part is not developed yet.");
+                    break;
+            }
+        } while (true);
     }
 
     private static void login() {
@@ -38,6 +53,7 @@ public class Main {
                 return input.nextInt();
             } catch (InputMismatchException e) {
                 System.out.println(errorMessage);
+                input.nextLine();
             }
         } while (repeatOnError);
         throw new InputMismatchException();

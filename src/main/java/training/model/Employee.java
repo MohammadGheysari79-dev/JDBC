@@ -2,11 +2,11 @@ package training.model;
 
 public class Employee {
     private final int ID;
-    private int password;
     private String firstName;
     private String lastName;
+    private String password;
 
-    public Employee(int ID, String firstName, String lastName, int password) {
+    public Employee(int ID, String firstName, String lastName, String password) {
         this.ID = ID;
         this.password = password;
         this.firstName = firstName;
@@ -25,11 +25,11 @@ public class Employee {
         return lastName;
     }
 
-    public int getPassword() {
+    public String getPassword() {
         return password;
     }
 
-    public void setPassword(int password) {
+    public void setPassword(String password) {
         this.password = password;
     }
 }

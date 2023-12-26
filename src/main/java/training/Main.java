@@ -1,6 +1,5 @@
 package training;
 
-
 import training.dao.Dao;
 import training.daoImp.EmployeeDaoImp;
 import training.model.Employee;

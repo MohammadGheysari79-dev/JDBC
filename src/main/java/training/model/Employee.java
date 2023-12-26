@@ -4,9 +4,9 @@ public class Employee {
     private final int ID;
     private String firstName;
     private String lastName;
-    private String password;
+    private int password;
 
-    public Employee(int ID, String firstName, String lastName, String password) {
+    public Employee(int ID, String firstName, String lastName, int password) {
         this.ID = ID;
         this.password = password;
         this.firstName = firstName;
@@ -25,11 +25,11 @@ public class Employee {
         return lastName;
     }
 
-    public String getPassword() {
+    public int getPassword() {
         return password;
     }
 
-    public void setPassword(String password) {
+    public void setPassword(int password) {
         this.password = password;
     }
 }
